@@ -38,7 +38,7 @@ existing_ports = set([port.device for port in serial.tools.list_ports.comports()
 while True:
     com_port = check_ports()
     if com_port:
-        baud_rate = simpledialog.askstring("auto putty", "New serial port on COM 8 detected. Enter baud rate:")
+        baud_rate = simpledialog.askstring("auto putty", "New serial port detected. Enter baud rate:")
         if baud_rate:
             print(baud_rate)
             print(com_port)
